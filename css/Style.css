@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/beauty.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu-bar {
+    background: black;
+    text-align: center;
+}
+
+.menu-bar ul {
+    display: flex;
+    list-style: none;
+    color: #fff;
+}
+
+.menu-bar ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.active,
+.menu-bar ul li:hover {
+    background: #2bab0d;
+    border-radius: 3px;
+}
+
+.sub-menu {
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    background: rgb(0, 100, 0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+}
+
+.contain {
+    /* color: aliceblue; */
+    text-align: center;
+    margin: 15rem;
+}
+
+.contain h1 {
+    font-size: 3rem;
+    color: #0096c7;
+}
+
+.contain p {
+    color: rgb(10, 14, 243);
+}
+
+.btn {
+    margin: 20px 0;
+    padding: 0.8rem;
+    border: 2px solid rgb(10, 14, 243);
+    border-radius: 8px;
+    background: transparent;
+    color: rgb(10, 14, 243);
+}
+
+.btn:hover {
+    background-color: rgb(10, 14, 243);
+    color: aliceblue;
+    border: transparent;
+}
+
+.contain1 {
+    border: 2px solid transparent;
+    background-color: #f4a261;
+}
+
+.contain1 p {
+    margin: 10px 0;
+    color: #001219;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.contain2 {
+    border: 2px solid transparent;
+    background-color: #fefae0;
+}
+
+.contain2 p {
+    margin: 10px 0;
+    color: #001219;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.wrapper .card {
+    background-color: #f4a261;
+}
+
+.wrapper .card1 {
+    background-color: #fefae0;
+}
+
+.wrapper .card2 {
+    background-color: #f4a261;
+}
+
+.wrapper .card p {
+    margin: 10px 0;
+    color: #001219;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.wrapper .card1 p {
+    margin: 10px 0;
+    color: #001219;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.wrapper .card2 p {
+    margin: 10px 0;
+    color: #001219;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+
+/* Responsive Query */
+
+@media(max-width:719px) {
+    .contain h1 {
+        width: 100%;
+        font-size: 150%;
+    }
+    .contain p {
+        font-size: 100%;
+    }
+}
+
+@media(max-width:629px) {
+    .contain p {
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width:601px) {
+    .contain h1 {
+        width: 100%;
+        font-size: 110%;
+    }
+    .contain p {
+        font-size: 0.6rem;
+    }
+}
+
+@media(max-width:578px) {
+    .btn {
+        font-size: 0.7rem;
+    }
+}
+
+@media(max-width:568px) {
+    .contain h1 {
+        width: 100%;
+        font-size: 100%;
+    }
+    .contain p {
+        font-size: 0.5rem;
+    }
+    .btn {
+        font-size: 0.5rem;
+    }
+}
+
+@media(max-width:578px) {
+    .contain h1 {
+        width: 100%;
+        font-size: 80%;
+    }
+    .contain p {
+        font-size: 0.3rem;
+    }
+    .btn {
+        font-size: 0.3rem;
+    }
+}
